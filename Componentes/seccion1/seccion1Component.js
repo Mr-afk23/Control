@@ -9,6 +9,8 @@ export function seccion1Component(){
       seccion1Component.appendChild(item());
         seccion1Component.appendChild(item());
           seccion1Component.appendChild(item());
+
+    
     return seccion1Component;
 
 }
