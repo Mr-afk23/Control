@@ -1,0 +1,25 @@
+.titulo1{
+    color: rgba(59, 59, 153, 0.829) ;
+    font-size: 30px;
+
+}
+
+.div{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 100%;
+    display: flex;
+}
+
+.header{
+     align-items: center;
+    padding: 0 2rem;
+    display: grid;
+    background-color: gray;
+  grid-template-columns: 1fr auto;
+}
+
+.img {
+    border-radius: 100%;
+}

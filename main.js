@@ -1,17 +1,13 @@
+import { header } from "./Componentes/header/headerComponent.js";
+import { seccion1Component } from "./Componentes/seccion1/seccion1Component.js";
 function seccion(){
-  
-let seccion = document.createElement('seccion');
 
-let h1 = document.createElement('h1')
-h1.className = "titulo";
-h1.innerText = "Hola Mundo";
-seccion.appendChild(h1);
+    
+    let seccion = document.createElement('seccion');
+    seccion.appendChild(header());
 
-
-let p = document.createElement('p');
-p.innerText = "Introduccion a Javascrip";
-seccion.appendChild(p);
-
+    
+    seccion.appendChild(seccion1Component());
 
 return seccion;
 }
