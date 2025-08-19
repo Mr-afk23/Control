@@ -1,26 +1,39 @@
-export function item(){
+export function item(titulo, urlImg, precio, descripcion) {
+    let item = document.createElement("div");
+    item.className = "item";
 
-    let item = document.createElement('div');
-    
-    item.className = "item"
+    // Título
+    let title = document.createElement("h3");
+    title.textContent = titulo;
+    item.appendChild(title);
 
-    let titulo = document.createElement("h2")
-    titulo.textContent = "Titulo";
-    item.appendChild(titulo);
-
-    let img = document.createElement("img")
-    img.src = "../assets/Camaro.jpg"
-    img.className = "Camaro"
+    // Imagen
+    let img = document.createElement("img");
+    img.src = urlImg;
+    img.alt = titulo;
     item.appendChild(img);
 
-    let descripcion = document.createElement("descripcion")
-    descripcion.textContent = "El Chevrolet Camaro fue creado por General Motors en 1966 como respuesta directa al éxito del Ford Mustang. Diseñado como un auto deportivo y accesible, debutó en 1967 con opciones de motor V6 y V8. Su estilo agresivo y rendimiento lo convirtieron rápidamente en un ícono de los muscle cars."
-    descripcion.className = "historia"
-    item.appendChild(descripcion);
+    // Precio
+    let price = document.createElement("p");
+    price.className = "precio";
+    price.textContent = `$${precio}`;
+    item.appendChild(price);
 
+    // Descripción
+    let desc = document.createElement("p");
+    desc.className = "descripcion";
+    desc.textContent = descripcion;
+    item.appendChild(desc);
 
-
-
+    // Evento click
+    item.addEventListener("click", ()=>{
+        item.classList.add("verde");
+        let rHeader = document.querySelector(".header");
+        rHeader.classList.add("ocultar");
+    });
 
     return item;
 }
+
+// (la función colorVerde realmente no hace falta,
+// porque ya agregas la clase en el eventListener)
