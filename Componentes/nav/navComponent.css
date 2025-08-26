@@ -1,0 +1,16 @@
+.items {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    margin-top: 50px;
+    
+}   
+
+.cuadro {
+    padding: 35px;
+    margin: 2rem;
+    border: 1px solid black;
+}
