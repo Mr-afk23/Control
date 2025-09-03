@@ -1,5 +1,7 @@
-import { item } from "../modulos/item/itemModulo.js";
+import { item } from "../modulos/item/productoModulo.js";
 import { productos } from "../../database/prouctos.js";
+
+
 export function seccion1Component(){
 
     let seccion1Component = document.createElement('seccion');
@@ -7,7 +9,7 @@ export function seccion1Component(){
     
 
     productos.forEach(element => {
-      seccion1Component.appendChild(item(element.title,element.image , element.description , element.price));
+      seccion1Component.appendChild(item(element.id, element.title, element.image, element.description, element.price));
     })
 
     

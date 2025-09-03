@@ -1,0 +1,40 @@
+.items {
+    position: fixed;
+        bottom: 0;
+        left: 0;
+width: 100%;
+    height: 8rem;
+    background-color: white;
+    border-top: 2px solid wheat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+    z-index: 1000;
+
+}
+
+.cuadro {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    /* Emojis más grandes */
+    border: 2px solid #333;
+    border-radius: 10px;
+    /* Bordes redondeados */
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.cuadro:hover {
+    background: #e9ecef;
+    /* Fondo al pasar el mouse */
+    transform: scale(1.1);
+    /* Ligeramente más grande */
+    border-color: #007bff;
+    /* Cambia color del borde */
+}
